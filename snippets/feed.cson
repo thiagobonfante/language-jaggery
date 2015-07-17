@@ -1,0 +1,71 @@
+".source.jag":
+  "Feed":
+    prefix: "fee"
+    body: """
+    var ${1:feed} = new Feed(${2:url});${0}
+    """
+  "Entries":
+    prefix: "feen"
+    body: """
+    ${1:feed}.entries${0}
+    """
+  "Author":
+    prefix: "feaut"
+    body: """
+    ${1:feed}.author${0}
+    """
+  "Authors":
+    prefix: "feauts"
+    body: """
+    ${1:feed}.authors${0}
+    """
+  "Category":
+    prefix: "fecat"
+    body: """
+    ${1:feed}.category${0}
+    """
+  "Contributors":
+    prefix: "fecon"
+    body: """
+    ${1:feed}.contributors${0}
+    """
+  "Logo":
+    prefix: "felog"
+    body: """
+    ${1:feed}.logo${0}
+    """
+  "Icon":
+    prefix: "feico"
+    body: """
+    ${1:feed}.icon${0}
+    """
+  "Links":
+    prefix: "felin"
+    body: """
+    ${1:feed}.links${0}
+    """
+  "Title":
+    prefix: "fetit"
+    body: """
+    ${1:feed}.title${0}
+    """
+  "Rights":
+    prefix: "ferig"
+    body: """
+    ${1:feed}.rights${0}
+    """
+  "Updated":
+    prefix: "feupd"
+    body: """
+    ${1:feed}.updated${0}
+    """
+  "To XML":
+    prefix: "fetox"
+    body: """
+    ${1:feed}.toXML();${0}
+    """
+  "To String":
+    prefix: "fetos"
+    body: """
+    ${1:feed}.toString();${0}
+    """

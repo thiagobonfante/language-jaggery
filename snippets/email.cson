@@ -1,0 +1,52 @@
+".source.jag":
+  "Email":
+    prefix: "em"
+    body: """
+    var ${1:email} = require('email');
+    var ${2:sender} = new email.Sender("${3:smtp}", "${4:port}", "${5:username}", "${6:password}"${7:, "tls"});${0}
+    """
+  "From":
+    prefix: "emfro"
+    body: """
+    ${1:sender}.from = ${0}
+    """
+  "To":
+    prefix: "emto"
+    body: """
+    ${1:sender}.to = ${0}
+    """
+  "Cc":
+    prefix: "emcc"
+    body: """
+    ${1:sender}.cc = ${0}
+    """
+  "Bcc":
+    prefix: "embcc"
+    body: """
+    ${1:sender}.bcc = ${0}
+    """
+  "Subject":
+    prefix: "emsub"
+    body: """
+    ${1:sender}.subject = ${0}
+    """
+  "Text":
+    prefix: "emtex"
+    body: """
+    ${1:sender}.text = ${0}
+    """
+  "Html":
+    prefix: "emhtm"
+    body: """
+    ${1:sender}.html = ${0}
+    """
+  "Add Attachment":
+    prefix: "emadd"
+    body: """
+    ${1:sender}.addAttachment(${2:file});${0}
+    """
+  "Send":
+    prefix: "emsen"
+    body: """
+    ${1:sender}.send();${0}
+    """

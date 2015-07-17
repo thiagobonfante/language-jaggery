@@ -1,0 +1,65 @@
+".source.jag":
+  "XMLHttpRequest":
+    prefix: "XMLHttpRequest"
+    body: """
+    var ${1:xhr} = new XMLHttpRequest();${0}
+    """
+  "On Ready State Change":
+    prefix: "xmonr"
+    body: """
+    ${1:xhr}.onreadystatechange = function() {
+      if (${2:xhr}.readyState == 4 && ${3:xhr}.status == 200) {
+        ${0}
+      }
+    };
+    """
+  "Status":
+    prefix: "xmsta"
+    body: """
+    ${1:xhr}.status;${0}
+    """
+  "Ready State":
+    prefix: "xmrea"
+    body: """
+    ${1:xhr}.readyState;${0}
+    """
+  "Status Text":
+    prefix: "xmstt"
+    body: """
+    ${1:xhr}.statusText;${0}
+    """
+  "Response Text":
+    prefix: "xmret"
+    body: """
+    ${1:xhr}.responseText;${0}
+    """
+  "Response XML":
+    prefix: "xmrex"
+    body: """
+    ${1:xhr}.responseXML;${0}
+    """
+  "Open":
+    prefix: "xmope"
+    body: """
+    ${1:xhr}.open(${2:method},${3:url},${4:async});${0}
+    """
+  "Send":
+    prefix: "xmsen"
+    body: """
+    ${1:xhr}.send(${2:payload});${0}
+    """
+  "Set Request Header":
+    prefix: "xmset"
+    body: """
+    ${1:xhr}.setRequestHeader(${2:name}, ${3:value});${0}
+    """
+  "Get Response Header":
+    prefix: "xmget"
+    body: """
+    ${1:xhr}.getResponseHeader(${2:name});${0}
+    """
+  "Abort":
+    prefix: "xmabo"
+    body: """
+    ${1:xhr}.abort();${0}
+    """

@@ -1,0 +1,26 @@
+".source.jag":
+  "URIMatcher":
+    prefix: "ur"
+    body: """
+    var ${1:uriMatcher} = new URIMatcher(${2:uri});${0}
+    """
+  "Match":
+    prefix: "urmat"
+    body: """
+    ${1:uriMatcher}.match(${2:pattern});${0}
+    """
+  "Elements":
+    prefix: "urele"
+    body: """
+    ${1:uriMatcher}.elements();${0}
+    """
+  "Include":
+    prefix: "inc"
+    body: """
+    include(${1:path});${0}
+    """
+  "Include Once":
+    prefix: "incon"
+    body: """
+    include_once(${1:path});${0}
+    """

@@ -1,0 +1,106 @@
+".source.jag":
+  "Add Property":
+    prefix: "coadd"
+    body: """
+    ${1:collection}.addProperty("${2:name}", "${3:value}");${0}
+    """
+  "Get Property":
+    prefix: "cogetp"
+    body: """
+    ${1:collection}.getProperty(${2:name});${0}
+    """
+  "Get Property Values":
+    prefix: "cogetpv"
+    body: """
+    ${1:collection}.getPropertyValues(${2:name});${0}
+    """
+  "Get Properties":
+    prefix: "cogetps"
+    body: """
+    ${1:collection}.getProperties();${0}
+    """
+  "Edit Property Value":
+    prefix: "coedi"
+    body: """
+    ${1:collection}.editPropertyValue(${2:name}, ${3:value}, ${4:newValue});${0}
+    """
+  "Remove Property Value":
+    prefix: "coremv"
+    body: """
+    ${1:collection}.removePropertyValue(${2:name}, ${3:value});${0}
+    """
+  "Remove Property":
+    prefix: "corem"
+    body: """
+    ${1:collection}.removeProperty(${2:name});${0}
+    """
+  "Set Property":
+    prefix: "coset"
+    body: """
+    ${1:collection}.setProperty(${2:name}, ${3:value});${0}
+    """
+  "author":
+    prefix: "coaut"
+    body: """
+    ${1:collection}.author${0}
+    """
+  "Last Updated User":
+    prefix: "colasu"
+    body: """
+    ${1:collection}.lastUpdatedUser${0}
+    """
+  "Last Updated Time":
+    prefix: "colast"
+    body: """
+    ${1:collection}.lastUpdatedTime${0}
+    """
+  "Created Time":
+    prefix: "cocre"
+    body: """
+    ${1:collection}.createdTime${0}
+    """
+  "Id":
+    prefix: "coid"
+    body: """
+    ${1:collection}.id${0}
+    """
+  "Path":
+    prefix: "copat"
+    body: """
+    ${1:collection}.path${0}
+    """
+  "Parent Path":
+    prefix: "copar"
+    body: """
+    ${1:collection}.parentPath${0}
+    """
+  "Permanent Path":
+    prefix: "coper"
+    body: """
+    ${1:collection}.permanentPath${0}
+    """
+  "State":
+    prefix: "costa"
+    body: """
+    ${1:collection}.state${0}
+    """
+  "Media Type":
+    prefix: "comed"
+    body: """
+    ${1:collection}.mediaType${0}
+    """
+  "Content":
+    prefix: "cocon"
+    body: """
+    ${1:collection}.content${0}
+    """
+  "Description":
+    prefix: "codes"
+    body: """
+    ${1:collection}.description${0}
+    """
+  "Get Children":
+    prefix: "cochi"
+    body: """
+    ${1:collection}.getChildren${0}
+    """

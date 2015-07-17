@@ -1,0 +1,16 @@
+".source.jag":
+  "Parse":
+    prefix: "pa"
+    body: """
+    parse(${1:jsonString})${0}
+    """
+  "Stringify":
+    prefix: "str"
+    body: """
+    stringify(${1:jsonObject})${0}
+    """
+  "XML":
+    prefix: "xml"
+    body: """
+    var ${1:xml} = new XML(${2:xmlString});${0}
+    """

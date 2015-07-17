@@ -1,0 +1,4 @@
+".source.jag":
+  "console.log":
+    "prefix": "cl"
+    "body": "console.log(${1:obj});"

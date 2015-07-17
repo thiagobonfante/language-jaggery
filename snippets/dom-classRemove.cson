@@ -1,0 +1,6 @@
+".source.jag":
+  "classList.remove":
+    "prefix": "cr"
+    "body": """
+    ${1:document}.classList.remove('${2:class}');
+    """

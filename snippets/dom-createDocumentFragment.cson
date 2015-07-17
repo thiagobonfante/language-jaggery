@@ -1,0 +1,6 @@
+".source.jag":
+  "createDocumentFragment":
+    "prefix": "cdf"
+    "body": """
+    ${1:document}.createDocumentFragment(${2:elem});
+    """

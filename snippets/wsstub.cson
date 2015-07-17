@@ -1,0 +1,22 @@
+".source.jag":
+  "WSStub":
+    prefix: "st"
+    body: """
+    var ${1:ws} = require('ws');
+    var ${2:stub} = new ws.WSStub('${3:url}');${0}
+    """
+  "Services":
+    prefix: "stser"
+    body: """
+    ${1:stub}.services['${2:name}'];${0}
+    """
+  "Operations":
+    prefix: "stope"
+    body: """
+    ${1:stub}.services['${2:name}'].operations['${3:operation}'];${0}
+    """
+  "Request":
+    prefix: "streq"
+    body: """
+    ${1:stub}.request();${0}
+    """

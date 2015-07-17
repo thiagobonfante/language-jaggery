@@ -1,0 +1,8 @@
+".source.jag":
+  "setTimeout":
+    "prefix": "st"
+    "body": """
+    setTimeout(function() {
+    \t${0:// body...}
+    }, ${1:delay});
+    """

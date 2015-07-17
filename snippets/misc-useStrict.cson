@@ -1,0 +1,6 @@
+".source.jag":
+  "use strict":
+    "prefix": "us"
+    "body": """
+    'use strict';
+    """

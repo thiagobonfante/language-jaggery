@@ -1,0 +1,6 @@
+".source.jag":
+  "debugger":
+    "prefix": "de"
+    "body": """
+    debugger;
+    """

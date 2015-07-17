@@ -1,0 +1,31 @@
+".source.jag":
+  "Carbon":
+    prefix: "car"
+    body: """
+    var ${1:carbon} = require('carbon');${0}
+    """
+  "Address":
+    prefix: "seadd"
+    body: """
+    ${1:carbon}.server.address('${2:http|https}');${0}
+    """
+  "Tenant Domain":
+    prefix: "seten"
+    body: """
+    ${1:carbon}.server.tenantDomain();${0}
+    """
+  "Tenant Id":
+    prefix: "seteni"
+    body: """
+    ${1:carbon}.server.tenantId();${0}
+    """
+  "Tenant User":
+    prefix: "setenu"
+    body: """
+    ${1:carbon}.server.tenantUser('${2:userName}');${0}
+    """
+  "Sandbox":
+    prefix: "sesan"
+    body: """
+    ${1:carbon}.server.sandbox(${2:options}, ${3:fn});${0}
+    """

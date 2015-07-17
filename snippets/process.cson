@@ -1,0 +1,31 @@
+".source.jag":
+  "Process":
+    prefix: "pro"
+    body: """
+    var ${1:process} = require('process');${0}
+    """
+  "Environment Var":
+    prefix: "prgete"
+    body: """
+    ${1:process}.getEnv("${2:name}");${0}
+    """
+  "All Environment Vars":
+    prefix: "prgetes"
+    body: """
+    ${1:process}.getEnvs();${0}
+    """
+  "Set Property":
+    prefix: "prset"
+    body: """
+    ${1:process}.setProperty(${2:key}, ${3:value});${0}
+    """
+  "Get Property":
+    prefix: "prget"
+    body: """
+    ${1:process}.getProperty(${2:key});${0}
+    """
+  "Get Properties":
+    prefix: "prgetp"
+    body: """
+    ${1:process}.getProperties();${0}
+    """

@@ -1,0 +1,6 @@
+".source.jag":
+  "confirm":
+    "prefix": "co"
+    "body": """
+    confirm('${1:msg}');
+    """

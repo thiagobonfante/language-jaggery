@@ -1,0 +1,99 @@
+".source.jag":
+  "Database":
+    prefix: "da"
+    body: """
+    var ${1:db} = new Database(${2:connectionUrl}, ${3:username}, ${4:password}${5:, [config]});${0}
+    """
+  "Config DB":
+    prefix: "dacon"
+    body: """
+    var config = {
+    \tdefaultAutoCommit: ${1:boolean},
+    \tdefaultReadOnly: ${2:boolean},
+    \tdefaultTransactionIsolation: ${3:"String"},
+    \tdefaultCatalog: ${4:"String"},
+    \tmaxActive: ${5:number},
+    \tmaxIdle: ${6:number},
+    \tminIdle: ${7:number},
+    \tinitialSize: ${8:number},
+    \tmaxWait: ${9:number},
+    \ttestOnBorrow: ${10:boolean},
+    \ttestOnReturn: ${11:boolean},
+    \ttestWhileIdle: ${12:boolean},
+    \tvalidationQuery: ${13:"String"},
+    \taccessToUnderlyingConnectionAllowed: ${14:boolean},
+    \tlogAbandoned: ${15:boolean},
+    \tconnectionProperties: ${16:"String"},
+    \tinitSQL: ${17:"String"},
+    \tvalidationInterval: ${18:number},
+    \tmaxAge: ${19:number},
+    \tsuspectTimeout: ${20:number}
+    };${0}
+    """
+  "Query":
+    prefix: "daque"
+    body: """
+    ${1:db}.query(${2:query}, function(results) {
+    \t${0}
+    });
+    """
+  "Query/Result":
+    prefix: "daquer"
+    body: """
+    var ${1:result} = ${2:db}.query(${3:query});${0}
+    """
+  "Commit":
+    prefix: "dacom"
+    body: """
+    ${1:db}.query(${2:query});${0}
+    """
+  "Rollback":
+    prefix: "darol"
+    body: """
+    ${1:db}.rollback();${0}
+    """
+  "Close":
+    prefix: "daclo"
+    body: """
+    ${1:db}.close();${0}
+    """
+  "MetadataStore":
+    prefix: "MetadataStore"
+    body: """
+    var ${1:dataStore} = new MetadataStore(${2:username}, ${3:password});${0}
+    """
+  "Resource Exists?":
+    prefix: "meres"
+    body: """
+    ${1:dataStore}.resourceExists(${2:path});${0}
+    """
+  "Get":
+    prefix: "meget"
+    body: """
+    ${1:dataStore}.get(${2:path}${3:, [start]}${4:, [pageSize]});${0}
+    """
+  "Put":
+    prefix: "meput"
+    body: """
+    ${1:dataStore}.put(${2:path}, ${3:resource});${0}
+    """
+  "Remove":
+    prefix: "merem"
+    body: """
+    ${1:dataStore}.remove(${2:path});${0}
+    """
+  "Create Link":
+    prefix: "mecre"
+    body: """
+    ${1:dataStore}.createLink(${2:path}, ${3:target});${0}
+    """
+  "New Resource":
+    prefix: "menewr"
+    body: """
+    ${1:dataStore}.newResource();${0}
+    """
+  "New Collection":
+    prefix: "menewc"
+    body: """
+    ${1:dataStore}.newCollection();${0}
+    """

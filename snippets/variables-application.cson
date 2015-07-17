@@ -1,0 +1,11 @@
+".source.jag":
+  "Global App":
+    prefix: "app"
+    body: """
+    application.$0
+    """
+  "Serve":
+    prefix: "ser"
+    body: """
+    serve(function(${1:request},${2:respond},${3:session}) {${0}});
+    """

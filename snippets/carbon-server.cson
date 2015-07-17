@@ -1,0 +1,11 @@
+".source.jag":
+  "Server":
+    prefix: "se"
+    body: """
+    var ${1:server} = new carbon.server.Server(${2:url});${0}
+    """
+  "Authenticate":
+    prefix: "seaut"
+    body: """
+    ${1:server}.authenticate(${2:username}, ${3:password});${0}
+    """

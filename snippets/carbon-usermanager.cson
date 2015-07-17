@@ -1,0 +1,96 @@
+".source.jag":
+  "User Manager":
+    prefix: "um"
+    body: """
+    var ${1:userManager} = new carbon.user.UserManager(${2:server}, ${3:tenantId});${0}
+    """
+  "Add User":
+    prefix: "umadd"
+    body: """
+    ${1:userManager}.addUser(${2:userName}, ${3:password}, ${4:roles}, ${5:claims}, ${6:profile});${0}
+    """
+  "Get User":
+    prefix: "umgetu"
+    body: """
+    ${1:userManager}.getUser(${2:userName});${0}
+    """
+  "User Exists":
+    prefix: "umexi"
+    body: """
+    ${1:userManager}.userExists(${2:userName});${0}
+    """
+  "Remove User":
+    prefix: "umrem"
+    body: """
+    ${1:userManager}.removeUser(${2:userName});${0}
+    """
+  "List Users":
+    prefix: "umlis"
+    body: """
+    ${1:userManager}.listUsers(${2:filter});${0}
+    """
+  "Set Claims":
+    prefix: "umsetcs"
+    body: """
+    ${1:userManager}.setClaims(${2:userName}, ${3:claims}, ${4:profile});${0}
+    """
+  "Get Claims":
+    prefix: "umgetcs"
+    body: """
+    ${1:userManager}.getClaims(${2:userName}, ${3:profile});${0}
+    """
+  "Get Claims For Set":
+    prefix: "umgetc4"
+    body: """
+    ${1:userManager}.getClaimsForSet(${2:userName}, ${3:claims}, ${4:profile});${0}
+    """
+  "Get Claim":
+    prefix: "umgetc"
+    body: """
+    ${1:userManager}.getClaim(${2:userName}, ${3:claim}, ${4:profile});${0}
+    """
+  "Add Role":
+    prefix: "umaddr"
+    body: """
+    ${1:userManager}.addRole(${2:role}, ${3:users}, ${4:permissions});${0}
+    """
+  "All Roles":
+    prefix: "umall"
+    body: """
+    ${1:userManager}.allRoles();${0}
+    """
+  "Role Exists?":
+    prefix: "umrol"
+    body: """
+    ${1:userManager}.roleExists(${2:role});${0}
+    """
+  "Update Role":
+    prefix: "umupd"
+    body: """
+    ${1:userManager}.updateRole(${2:previousRoleName}, ${3:newRoleName});${0}
+    """
+  "Authorize Role":
+    prefix: "umaut"
+    body: """
+    ${1:userManager}.authorizeRole(${2:role}, ${3:permission}, ${4:action});${0}
+    """
+  "Is Authorized?":
+    prefix: "umisa"
+    body: """
+    ${1:userManager}.isAuthorized(${2:role}, ${3:permission}, ${4:action});${0}
+    """
+  "Deny Role":
+    prefix: "umden"
+    body: """
+    ${1:userManager}.denyRole(${2:role}, ${3:permission}, ${4:action});${0}
+    """
+  "Upd Role List Of User":
+    prefix: "umupdr"
+    body: """
+    ${1:userManager}.updateRoleListOfUser(${2:username}, ${3:deletedRoles}, ${4:newRoles});${0}
+    """
+  "Upd User List Of Role":
+    prefix: "umupdu"
+    body: """
+    ${1:userManager}.updateUserListOfRole(${2:rolename}, ${3:deletedUsers}, ${4:newUsers});${0}
+    """

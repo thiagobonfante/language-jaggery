@@ -1,0 +1,46 @@
+".source.jag":
+  "HTTP response":
+    prefix: "re"
+    body: """
+    response.$0
+    """
+  "Status":
+    prefix: "resta"
+    body: """
+    ${1:response}.status${0}
+    """
+  "Content-Type":
+    prefix: "recont"
+    body: """
+    ${1:response}.contentType = '${1:type}';$0
+    """
+  "Character Enconding":
+    prefix: "recha"
+    body: """
+    ${1:response}.characterEncoding = '${1:type}';$0
+    """
+  "Content":
+    prefix: "recon"
+    body: """
+    ${1:response}.content = '${1:type}';$0
+    """
+  "Add Header":
+    prefix: "readdh"
+    body: """
+    ${1:response}.addHeader('${1:key}', '${2:value}');$0
+    """
+  "Send Redirect":
+    prefix: "resenr"
+    body: """
+    ${1:response}.sendRedirect(${1:url});$0
+    """
+  "Send Error":
+    prefix: "resene"
+    body: """
+    ${1:response}.sendError(${1:errCode});$0
+    """
+  "Add Cookie":
+    prefix: "readdc"
+    body: """
+    ${1:response}.addCookie(${1:cookie});$0
+    """

@@ -1,0 +1,101 @@
+".source.jag":
+  "Add Property":
+    prefix: "dradd"
+    body: """
+    ${1:resource}.addProperty("${2:name}", "${3:value}");${0}
+    """
+  "Get Property":
+    prefix: "drgetp"
+    body: """
+    ${1:resource}.getProperty(${2:name});${0}
+    """
+  "Get Property Values":
+    prefix: "drgetpv"
+    body: """
+    ${1:resource}.getPropertyValues(${2:name});${0}
+    """
+  "Get Properties":
+    prefix: "drgetps"
+    body: """
+    ${1:resource}.getProperties();${0}
+    """
+  "Edit Property Value":
+    prefix: "dredi"
+    body: """
+    ${1:resource}.editPropertyValue(${2:name}, ${3:value}, ${4:newValue});${0}
+    """
+  "Remove Property Value":
+    prefix: "drremv"
+    body: """
+    ${1:resource}.removePropertyValue(${2:name}, ${3:value});${0}
+    """
+  "Remove Property":
+    prefix: "drrem"
+    body: """
+    ${1:resource}.removeProperty(${2:name});${0}
+    """
+  "Set Property":
+    prefix: "drset"
+    body: """
+    ${1:resource}.setProperty(${2:name}, ${3:value});${0}
+    """
+  "author":
+    prefix: "draut"
+    body: """
+    ${1:resource}.author${0}
+    """
+  "Last Updated User":
+    prefix: "drlasu"
+    body: """
+    ${1:resource}.lastUpdatedUser${0}
+    """
+  "Last Updated Time":
+    prefix: "drlast"
+    body: """
+    ${1:resource}.lastUpdatedTime${0}
+    """
+  "Created Time":
+    prefix: "drcre"
+    body: """
+    ${1:resource}.createdTime${0}
+    """
+  "Id":
+    prefix: "drid"
+    body: """
+    ${1:resource}.id${0}
+    """
+  "Path":
+    prefix: "drpat"
+    body: """
+    ${1:resource}.path${0}
+    """
+  "Parent Path":
+    prefix: "drpar"
+    body: """
+    ${1:resource}.parentPath${0}
+    """
+  "Permanent Path":
+    prefix: "drper"
+    body: """
+    ${1:resource}.permanentPath${0}
+    """
+  "State":
+    prefix: "drsta"
+    body: """
+    ${1:resource}.state${0}
+    """
+  "Media Type":
+    prefix: "drmed"
+    body: """
+    ${1:resource}.mediaType${0}
+    """
+  "Content":
+    prefix: "drcon"
+    body: """
+    ${1:resource}.content${0}
+    """
+  "Description":
+    prefix: "drdes"
+    body: """
+    ${1:resource}.description${0}
+    """

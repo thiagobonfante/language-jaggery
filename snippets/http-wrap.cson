@@ -1,0 +1,36 @@
+".source.jag":
+  "HTTP/GET":
+    prefix: "wge"
+    body: """
+    get(${1:url}${2:, [data]}${3:, [headers]}${4:, [type]}${5:, [success(data, xhr)]});$0
+    """
+  "HTTP/GET Response":
+    prefix: "wger"
+    body: """
+    var ${1:response} = get(${2:url}${3:, [data]}${4:, [headers]}${5:, [type]});$0
+    """
+  "HTTP/POST":
+    prefix: "wpo"
+    body: """
+    post(${1:url}${2:, [data]}${3:, [headers]}${4:, [type]}${5:, [success(data, xhr)]});$0
+    """
+  "HTTP/POST Response":
+    prefix: "wpor"
+    body: """
+    var ${1:response} = post(${2:url}${3:, [data]}${4:, [headers]}${5:, [type]});$0
+    """
+  "HTTP/PUT":
+    prefix: "wpu"
+    body: """
+    put(${1:url}${2:, [data]}${3:, [type]}${4:, [headers]}${5:, [success(data, xhr)]});$0
+    """
+  "HTTP/PUT Response":
+    prefix: "wpur"
+    body: """
+    var ${1:response} = put(${2:url}${3:, [data]}${4:, [type]}${5:, [headers]});$0
+    """
+  "HTTP/DELETE":
+    prefix: "wde"
+    body: """
+    del(${1:url}${2:, [data]}${3:, [type]}${4:, [headers]}${5:, [success(data, xhr)]});$0
+    """

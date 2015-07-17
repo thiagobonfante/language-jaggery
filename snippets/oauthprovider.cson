@@ -1,0 +1,35 @@
+".source.jag":
+  "OAuthProvider":
+    prefix: "oa"
+    body: """
+    var ${1:oauth} = require('oauth');
+    var ${2:config} = {
+    \t"oauth_version" : "${3:version}",
+    \t"authorization_url" : "${4:url}",
+    \t"access_token_url" : "${5:url}",
+    \t"request_token_url" : "${6:url}",
+    \t"api_key" : "${7:key}",
+    \t"api_secret" : "${8:secret}"
+    }
+    var ${9:provider} = new oauth.OAuthProvider(${2:config});${0}
+    """
+  "Auth Url":
+    prefix: "oagetau"
+    body: """
+    ${1:provider}.getAuthorizationUrl();${0}
+    """
+  "Access Token":
+    prefix: "oagetac"
+    body: """
+    ${1:provider}.getAccessToken(${2:authCode});${0}
+    """
+  "Send OAuth Request":
+    prefix: "oasen"
+    body: """
+    ${1:provider}.sendOAuthRequest(${2:accessToken}, ${3:verb}${4:, [parameters]});${0}
+    """
+  "Body":
+    prefix: "oagetb"
+    body: """
+    ${1:provider}.getBody();${0}
+    """

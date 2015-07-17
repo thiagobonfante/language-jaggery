@@ -1,0 +1,6 @@
+".source.jag":
+  "removeChild":
+    "prefix": "rc"
+    "body": """
+    ${1:document}.removeChild(${2:elem});
+    """

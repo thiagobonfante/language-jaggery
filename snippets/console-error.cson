@@ -1,0 +1,4 @@
+".source.jag":
+  "console.error":
+    "prefix": "ce"
+    "body": "console.error(${1:obj});"

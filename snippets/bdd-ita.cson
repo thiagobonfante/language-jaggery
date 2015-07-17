@@ -1,0 +1,8 @@
+".source.jag":
+  "it asynchronous":
+    "prefix": "ita"
+    "body": """
+    it('${1:description}', function(done) {
+    \t${0:// body...}
+    });
+    """

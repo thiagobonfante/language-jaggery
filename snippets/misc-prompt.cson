@@ -1,0 +1,6 @@
+".source.jag":
+  "prompt":
+    "prefix": "pm"
+    "body": """
+    prompt('${1:msg}');
+    """

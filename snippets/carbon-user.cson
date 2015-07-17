@@ -1,0 +1,51 @@
+".source.jag":
+  "User":
+    prefix: "us"
+    body: """
+    var ${1:user} = new carbon.user.User(${2:userManager}, ${3:userName});${0}
+    """
+  "Set Claims":
+    prefix: "ussetcs"
+    body: """
+    ${1:user}.setClaims(${2:claims}, ${3:profile});${0}
+    """
+  "Get Claims":
+    prefix: "usgetcs"
+    body: """
+    ${1:user}.getClaims(${2:profile});${0}
+    """
+  "Get Claims For Set":
+    prefix: "usgetc4"
+    body: """
+    ${1:user}.getClaimsForSet(${2:claims}, ${3:profile});${0}
+    """
+  "Add Roles":
+    prefix: "usaddr"
+    body: """
+    ${1:user}.addRoles(${2:roles});${0}
+    """
+  "Remove Roles":
+    prefix: "usrem"
+    body: """
+    ${1:user}.removeRoles(${2:roles});${0}
+    """
+  "Get Roles":
+    prefix: "usgetr"
+    body: """
+    ${1:user}.getRoles();${0}
+    """
+  "Has Roles?":
+    prefix: "ushas"
+    body: """
+    ${1:user}.hasRoles(${2:roles});${0}
+    """
+  "Update Roles":
+    prefix: "usupd"
+    body: """
+    ${1:user}.updateRoles(${2:remove}, ${3:add});${0}
+    """
+  "Is Authorized?":
+    prefix: "usisa"
+    body: """
+    ${1:user}.isAuthorized(${2:permission}, ${3:action});${0}
+    """

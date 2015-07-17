@@ -1,0 +1,86 @@
+".source.jag":
+  "File":
+    prefix: "fi"
+    body: """
+    var ${1:file} = new File(${2:path});${0}
+    """
+  "Open":
+    prefix: "fiope"
+    body: """
+    ${1:file}.open("${2:r | r+ | w | w+ | a | a+}");${0}
+    """
+  "Write":
+    prefix: "fiwri"
+    body: """
+    ${1:file}.write(${2:object});${0}
+    """
+  "Read":
+    prefix: "firea"
+    body: """
+    ${1:file}.read(${2:num});${0}
+    """
+  "Stream":
+    prefix: "fistr"
+    body: """
+    ${1:file}.getStream();${0}
+    """
+  "Read All":
+    prefix: "fireaa"
+    body: """
+    ${1:file}.readAll();${0}
+    """
+  "Close":
+    prefix: "ficlo"
+    body: """
+    ${1:file}.close();${0}
+    """
+  "Move":
+    prefix: "fimov"
+    body: """
+    ${1:file}.move(${2:targetFileName});${0}
+    """
+  "Save As":
+    prefix: "fisav"
+    body: """
+    ${1:file}.saveAs(${2:targetLocation});${0}
+    """
+  "Delete":
+    prefix: "fidel"
+    body: """
+    ${1:file}.del();${0}
+    """
+  "Length":
+    prefix: "filen"
+    body: """
+    ${1:file}.getLength();${0}
+    """
+  "Last Modified":
+    prefix: "filas"
+    body: """
+    ${1:file}.getLastModified();${0}
+    """
+  "Name":
+    prefix: "finam"
+    body: """
+    ${1:file}.getName();${0}
+    """
+  "Exists?":
+    prefix: "fiexi"
+    body: """
+    ${1:file}.isExists();${0}
+    """
+  "Is Directory?":
+    prefix: "fidir"
+    body: """
+    ${1:file}.isDirectory();${0}
+    """
+  "Make Dir":
+    prefix: "fimkd"
+    body: """
+    ${1:file}.mkdir("${2:path}");${0}
+    """
+  "Path":
+    prefix: "fipat"
+    body: """
+    ${1:file}.getPath();${0}
+    """

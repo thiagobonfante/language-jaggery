@@ -1,0 +1,6 @@
+".source.jag":
+  "process.exit":
+    "prefix": "pe"
+    "body": """
+    process.exit(${1:code});
+    """

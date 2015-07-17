@@ -1,0 +1,136 @@
+".source.jag":
+  "HTTP request":
+    prefix: "req"
+    body: """
+    request.${0}
+    """
+  "Method":
+    prefix: "getmet"
+    body: """
+    getMethod();
+    """
+  "Protocol":
+    prefix: "getpro"
+    body: """
+    getProtocol();
+    """
+  "Query String":
+    prefix: "getques"
+    body: """
+    getQueryString();
+    """
+  "Content":
+    prefix: "getcon"
+    body: """
+    getContent();
+    """
+  "Content-Type":
+    prefix: "getcontt"
+    body: """
+    getContentType();
+    """
+  "Request URI":
+    prefix: "geturi"
+    body: """
+    getRequestURI();
+    """
+  "Request URL":
+    prefix: "geturl"
+    body: """
+    getRequestURL();
+    """
+  "Path Translated":
+    prefix: "getpatt"
+    body: """
+    getPathTranslated();
+    """
+  "Is Secure":
+    prefix: "getiss"
+    body: """
+    isSecure();
+    """
+  "Remote Addr":
+    prefix: "getrema"
+    body: """
+    getRemoteAddr();
+    """
+  "Context Path":
+    prefix: "getconp"
+    body: """
+    getContextPath();
+    """
+  "Local Port":
+    prefix: "getlocp"
+    body: """
+    getLocalPort();
+    """
+  "User":
+    prefix: "getuse"
+    body: """
+    getUser();
+    """
+  "Input Stream":
+    prefix: "getinps"
+    body: """
+    getInputStream();
+    """
+  "Header":
+    prefix: "gethea"
+    body: """
+    getHeader("${1:name}");${0}
+    """
+  "All Headers":
+    prefix: "getallh"
+    body: """
+    getAllHeaders();
+    """
+  "Parameter":
+    prefix: "getpar"
+    body: """
+    getParameter("${1:paramName}");${0}
+    """
+  "All Parameters":
+    prefix: "getallp"
+    body: """
+    getAllParameters();
+    """
+  "Locale":
+    prefix: "getlo"
+    body: """
+    getLocale();
+    """
+  "All Locales":
+    prefix: "getalll"
+    body: """
+    getAllLocales();
+    """
+  "Mapped Path":
+    prefix: "getmapp"
+    body: """
+    getMappedPath();
+    """
+  "File":
+    prefix: "getfi"
+    body: """
+    getFile("${1:fileName}");${0}
+    """
+  "Save As":
+    prefix: "sav"
+    body: """
+    saveAs(${1:file}.getName());
+    """
+  "All Files":
+    prefix: "getallf"
+    body: """
+    getAllFiles();
+    """
+  "Cookie":
+    prefix: "getcoo"
+    body: """
+    getCookie(${1:name});${0}
+    """
+  "All Cookies":
+    prefix: "getallc"
+    body: """
+    getAllCookies();
+    """

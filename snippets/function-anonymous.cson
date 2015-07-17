@@ -1,0 +1,8 @@
+".source.jag":
+  "anonymous function":
+    "prefix": "afn"
+    "body": """
+    function(${1:arguments}) {
+    \t${0:// body...}
+    }
+    """

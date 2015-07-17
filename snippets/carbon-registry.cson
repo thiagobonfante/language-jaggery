@@ -1,0 +1,151 @@
+".source.jag":
+  "Registry":
+    prefix: "reg"
+    body: """
+    var ${1:registry} = new carbon.registry.Registry(${2:server}, ${3:options});${0}
+    """
+  "Options":
+    prefix: "reopt"
+    body: """
+    var ${1:options} = {
+    \tusername : '${2:username}',
+    \tdomain : '${3:domain}',
+    \ttenantId : ${$:tenant}
+    };${0}
+    """
+  "Put":
+    prefix: "reput"
+    body: """
+    ${1:registry}.put(${2:path}, ${3:resource});${0}
+    """
+  "Resource":
+    prefix: "reres"
+    body: """
+    var ${1:resource} = {
+    \tcontent : '${2:content}',
+    \tmediaType : '${3:text/plain}',
+    \tdescription : '${4:description}',
+    \tuuid : '${5:uuid}',
+    \tproperties : {${0}}
+    };
+    """
+  "Get":
+    prefix: "reget"
+    body: """
+    ${1:registry}.get(${2:path});${0}
+    """
+  "Remove":
+    prefix: "remov"
+    body: """
+    ${1:registry}.move(${2:src}, ${3:dest});${0}
+    """
+  "Copy":
+    prefix: "recop"
+    body: """
+    ${1:registry}.copy(${2:src}, ${3:dest});${0}
+    """
+  "Rename":
+    prefix: "renam"
+    body: """
+    ${1:registry}.rename(${2:path}, ${3:newName});${0}
+    """
+  "Remove":
+    prefix: "rerem"
+    body: """
+    ${1:registry}.remove(${2:path});${0}
+    """
+  "Exists?":
+    prefix: "reexi"
+    body: """
+    ${1:registry}.exists(${2:path});${0}
+    """
+  "Tag":
+    prefix: "retag"
+    body: """
+    ${1:registry}.tag(${2:path}, ${3:tags});${0}
+    """
+  "Tags":
+    prefix: "retags"
+    body: """
+    ${1:registry}.tags(${2:path});${0}
+    """
+  "Untag":
+    prefix: "reunt"
+    body: """
+    ${1:registry}.untag(${2:path}, ${3:tags});${0}
+    """
+  "Rate":
+    prefix: "rerat"
+    body: """
+    ${1:registry}.rate(${2:path}, ${3:rate});${0}
+    """
+  "Add Property":
+    prefix: "readdp"
+    body: """
+    ${1:registry}.addProperty(${2:path}, ${3:propName}, ${4:value});${0}
+    """
+  "Properties":
+    prefix: "repro"
+    body: """
+    ${1:registry}.properties(${2:path});${0}
+    """
+  "Rating":
+    prefix: "rerati"
+    body: """
+    ${1:registry}.rating(${2:path}, ${3:user});${0}
+    """
+  "Unrate":
+    prefix: "reunr"
+    body: """
+    ${1:registry}.unrate(${2:path);${0}
+    """
+  "Comment":
+    prefix: "recom"
+    body: """
+    ${1:registry}.comment(${2:path}, ${3:comment});${0}
+    """
+  "Comments":
+    prefix: "recoms"
+    body: """
+    ${1:registry}.comments(${2:path});${0}
+    """
+  "Comment Count":
+    prefix: "recomc"
+    body: """
+    ${1:registry}.commentCount(${2:path});${0}
+    """
+  "Uncomment":
+    prefix: "reunc"
+    body: """
+    ${1:registry}.uncomment(${2:path});${0}
+    """
+  "Version":
+    prefix: "rever"
+    body: """
+    ${1:registry}.version(${2:path});${0}
+    """
+  "Versions":
+    prefix: "revers"
+    body: """
+    ${1:registry}.versions(${2:path});${0}
+    """
+  "Restore":
+    prefix: "rerest"
+    body: """
+    ${1:registry}.restore(${2:path});${0}
+    """
+  "Unversion":
+    prefix: "reunv"
+    body: """
+    ${1:registry}.unversion(${2:path}, ${3:versionId});${0}
+    """
+  "link":
+    prefix: "relin"
+    body: """
+    ${1:registry}.link(${2:path}, ${3:target});${0}
+    """
+  "query":
+    prefix: "reque"
+    body: """
+    ${1:registry}.query(${2:path});${0}
+    """

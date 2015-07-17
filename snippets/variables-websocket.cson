@@ -1,0 +1,34 @@
+".source.jag":
+  "On Text":
+    prefix: "weont"
+    body: """
+    ${1:webSocket}.ontext = function (data) {
+    \t${0}
+    };
+    """
+  "On Binary":
+    prefix: "weonb"
+    body: """
+    ${1:webSocket}.onbinary = function (stream) {
+    \t${0}
+    };
+    """
+  "On Open":
+    prefix: "weono"
+    body: """
+    ${1:webSocket}.onopen = function (stream) {
+    \t${0}
+    };
+    """
+  "On Close":
+    prefix: "weonc"
+    body: """
+    ${1:webSocket}.onclose = function (stream) {
+    \t${0}
+    };
+    """
+  "WS Send":
+    prefix: "wesen"
+    body: """
+    ${1:webSocket}.send(${2:stream});$0
+    """

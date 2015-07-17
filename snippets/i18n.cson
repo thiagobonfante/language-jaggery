@@ -1,0 +1,22 @@
+".source.jag":
+  "i18n":
+    prefix: "i1"
+    body: """
+    var ${1:i18n} = require('i18n');
+    ${1:i18n}.init(${2:request});${0}
+    """
+  "Init":
+    prefix: "i1ini"
+    body: """
+    ${1:i18n}.init(${2:request});${0}
+    """
+  "Set Path":
+    prefix: "i1pat"
+    body: """
+    ${1:i18n}.localeResourcesBasePath = ${0}
+    """
+  "Localize":
+    prefix: "i1loc"
+    body: """
+    ${1:i18n}.localize(${2:key}, ${3:fallback});${0}
+    """

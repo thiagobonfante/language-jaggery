@@ -1,0 +1,6 @@
+".source.jag":
+  "alert":
+    "prefix": "al"
+    "body": """
+    alert('${1:msg}');
+    """

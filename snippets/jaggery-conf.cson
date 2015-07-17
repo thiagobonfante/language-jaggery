@@ -1,0 +1,75 @@
+".source.jag":
+  "displayName":
+    prefix: "cfdis"
+    body: """
+    "displayName" : "${1:displayName}"${0}
+    """
+  "welcomeFiles":
+    prefix: "cfwel"
+    body: """
+    "welcomeFiles" : ["${1:files}"]${0}
+    """
+  "logLevel":
+    prefix: "cflog"
+    body: """
+    "logLevel" : "${1:info|debug|error|warn|fatal}"${0}
+    """
+  "errorPages":
+    prefix: "cferr"
+    body: """
+    "errorPages" : [
+    \t{
+    \t\t"errorCode" : "${1:errorCode}",
+    \t\t"location" : "${2:location}"
+    \t}
+    ]${0}
+    """
+  "securityConstraints":
+    prefix: "cfsecc"
+    body: """
+    "securityConstraints": [{
+    \t"securityConstraint": {
+    \t\t"webResourceCollection": {
+    \t\t\t"name": "${1:name}",
+    \t\t\t"urlPatterns": ["${2:pattern}"],
+    \t\t\t"methods": ["${3:GET | POST | PUT | DELETE}"]
+    \t\t},
+    \t\t"authRoles": ["${4:roles}"]
+    \t}
+    }]$0
+    """
+  "loginConfig":
+    prefix: "cflogi"
+    body: """
+    "loginConfig" : { "authMethod" : "${1: BASIC | CLIENT-CERT | FORM}" }${0}
+    """
+  "securityRoles":
+    prefix: "cfsecr"
+    body: """
+    "securityRoles" : ["${1:roles}"]${0}
+    """
+  "urlMappings":
+    prefix: "cfurl"
+    body: """
+    "urlMappings" : [
+    \t{
+    \t\t"url" : "${1:url}",
+    \t\t"path" : "${2:path}"
+    \t}
+    ]${0}
+    """
+  "distributable":
+    prefix: "cfdist"
+    body: """
+    "distributable" : ${1:true}${0}
+    """
+  "initScripts":
+    prefix: "cfini"
+    body: """
+    "initScripts" : ["${1:scripts}"]${0}
+    """
+  "destroyScripts":
+    prefix: "cfdes"
+    body: """
+    "destroyScripts" : ["${1:scripts}"]${0}
+    """

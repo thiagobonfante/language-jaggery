@@ -1,0 +1,71 @@
+".source.jag":
+  "Entry":
+    prefix: "en"
+    body: """
+    var ${1:entry} = new Entry();${0}
+    """
+  "Id":
+    prefix: "enid"
+    body: """
+    ${1:entry}.id${0}
+    """
+  "Authors":
+    prefix: "enaut"
+    body: """
+    ${1:entry}.authors${0}
+    """
+  "Categories":
+    prefix: "encat"
+    body: """
+    ${1:entry}.categories${0}
+    """
+  "Contributors":
+    prefix: "encont"
+    body: """
+    ${1:entry}.contributors${0}
+    """
+  "Content":
+    prefix: "encon"
+    body: """
+    ${1:entry}.content${0}
+    """
+  "Published":
+    prefix: "enpub"
+    body: """
+    ${1:entry}.published${0}
+    """
+  "Links":
+    prefix: "enlin"
+    body: """
+    ${1:entry}.links${0}
+    """
+  "Title":
+    prefix: "entit"
+    body: """
+    ${1:entry}.title${0}
+    """
+  "Summary":
+    prefix: "ensum"
+    body: """
+    ${1:entry}.summary${0}
+    """
+  "Rights":
+    prefix: "enrig"
+    body: """
+    ${1:entry}.rights${0}
+    """
+  "Updated":
+    prefix: "enupd"
+    body: """
+    ${1:entry}.updated${0}
+    """
+  "To XML":
+    prefix: "entox"
+    body: """
+    ${1:entry}.toXML();${0}
+    """
+  "To String":
+    prefix: "entos"
+    body: """
+    ${1:entry}.toString();${0}
+    """

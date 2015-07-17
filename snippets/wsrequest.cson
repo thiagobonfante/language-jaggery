@@ -1,0 +1,78 @@
+".source.jag":
+  "WSRequest":
+    prefix: "ws"
+    body: """
+    var ${1:ws} = require('ws');
+
+    var ${2:wsRequest} = new ${1:ws}.WSRequest();
+    var ${3:options} = new Array();
+
+    ${3:options}.useSOAP = 1.2;
+    ${3:options}.useWSA = 1.0;
+    ${3:options}.action = "urn:getreq";
+    var ${4:payload} = ${5:null};
+    var ${6:endpoint} = "${7:url}";
+    var ${8:result};
+
+    try {
+    \t${2:wsRequest}.open(${3:options}, ${6:endpoint}, ${9:false});
+    \t${2:wsRequest}.send(${4:payload});
+    \t${8:result} = ${2:wsRequest}.responseE4X;
+    } catch (e) {
+    \te.toString();
+    }${0}
+    """
+  "Response XML":
+    prefix: "wsrex"
+    body: """
+    ${1:wsRequest}.responseXML;${0}
+    """
+  "Response Text":
+    prefix: "wsret"
+    body: """
+    ${1:wsRequest}.responseText;${0}
+    """
+  "Response E4X":
+    prefix: "wsree"
+    body: """
+    ${1:wsRequest}.responseE4X;${0}
+    """
+  "Ready State":
+    prefix: "wsrea"
+    body: """
+    ${1:wsRequest}.readyState;${0}
+    """
+  "Error":
+    prefix: "wserr"
+    body: """
+    ${1:wsRequest}.error;${0}
+    """
+  "Response XML":
+    prefix: "wsrex"
+    body: """
+    ${1:wsRequest}.responseXML;${0}
+    """
+  "On Ready State Change":
+    prefix: "wsonr"
+    body: """
+    ${1:wsRequest}.onreadystatechange = function() {
+      if (${2:request}.readyState == 4) {
+        ${0}
+      }
+    };
+    """
+  "Open":
+    prefix: "wsope"
+    body: """
+    ${1:wsRequest}.open(${0});
+    """
+  "Open WSDL":
+    prefix: "wsopenw"
+    body: """
+    ${1:wsRequest}.openWSDL(${0});
+    """
+  "Send":
+    prefix: "wssen"
+    body: """
+    ${1:wsRequest}.send(${2:payload});${0}
+    """
