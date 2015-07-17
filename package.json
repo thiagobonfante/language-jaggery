@@ -6,14 +6,14 @@
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-jaggeryjs",
+  "homepage": "http://atom..io/packages/language-jaggeryjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-jaggeryjs.git"
+    "url": "https://github.com/thiagobonfante/language-jaggeryjs.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-jaggeryjs/issues"
+    "url": "https://github.com/thiagobonfante/language-jaggeryjs/issues"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"
