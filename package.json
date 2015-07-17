@@ -1,19 +1,19 @@
 {
-  "name": "language-jaggeryjs",
+  "name": "language-jaggery",
   "version": "0.1.0",
   "description": "JaggeryJS language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom..io/packages/language-jaggeryjs",
+  "homepage": "http://atom.io/packages/language-jaggery",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiagobonfante/language-jaggeryjs.git"
+    "url": "https://github.com/thiagobonfante/language-jaggery.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thiagobonfante/language-jaggeryjs/issues"
+    "url": "https://github.com/thiagobonfante/language-jaggery/issues"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"
